@@ -6,3 +6,8 @@ export async function GET(){
     return NextResponse.json(directors)
     
 }
+
+export async function POST() {
+    console.log("acessou POST")
+    return NextResponse.json({sucess:"ok"})
+}
