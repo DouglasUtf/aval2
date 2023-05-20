@@ -8,3 +8,7 @@ export async  function getAllDirector(){
 export async function addDirector(name:string, email: string){
     await sql`INSERT INTO director (name, email) VALUES (${name}, ${email})`;
 }
+
+export async function deleteDirector(id:string){
+    await sql`DELETE FROM director WHERE id=${id}`;
+}

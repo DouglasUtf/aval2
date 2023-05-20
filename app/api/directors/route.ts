@@ -12,3 +12,4 @@ export async function POST(request: Request) {
     addDirector(director.name, director.email)
     return NextResponse.json({sucess:"ok"})
 }
+
