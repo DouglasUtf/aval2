@@ -1,4 +1,4 @@
-import { getAllDirector } from "@/app/model/DirectorsService"
+import { getAllDirector, addDirector } from "@/app/model/DirectorsService"
 import { NextResponse } from "next/server"
 
 export async function GET(){
@@ -7,7 +7,8 @@ export async function GET(){
     
 }
 
-export async function POST() {
-    console.log("acessou POST")
+export async function POST(request: Request) {
+    const director= await request.json()
+    addDirector(director.name, director.email)
     return NextResponse.json({sucess:"ok"})
 }
