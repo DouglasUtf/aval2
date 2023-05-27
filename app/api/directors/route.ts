@@ -7,8 +7,6 @@ export async function GET(){
     
 }
 
-
-
 export async function POST(request: Request) {
     const director= await request.json()
     addDirector(director.name, director.email)
