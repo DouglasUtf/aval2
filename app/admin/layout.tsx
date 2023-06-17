@@ -8,7 +8,7 @@ export default function AdminLayout({
     children: React.ReactNode
 }) {
     return (
-        <div>
+        <div className="md:container md:mx-auto">
             <Nav />
             <div className="flex">
                 <Aside />
