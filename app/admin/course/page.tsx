@@ -18,7 +18,7 @@ export default async function CoursePage(){
             <tbody>
                 {courses.map(course => (  
 
-                <tr key={course.id}> <td>{course.name}</td> <td>{course.description}</td> <td><a href="/admin/course/edit">Editar</a></td> </tr>
+                <tr key={course.id}> <td>{course.name}</td> <td>{course.description}</td> <td><a href={`/admin/course/edit?id=${course.id}`}>Editar</a></td> </tr>   
 
                 ))}
             </tbody>

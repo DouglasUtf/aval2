@@ -9,7 +9,7 @@ export async function addCourse(name:string, description: string){
     await sql`INSERT INTO course (name, description) VALUES (${name}, ${description})`;
 }
 
-export async function deleteCourse(id:string){
+export async function deleteCourseById(id:string){
     await sql`DELETE FROM course WHERE id=${id}`;
 }
 
