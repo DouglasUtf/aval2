@@ -19,8 +19,17 @@ export default async function EditCourse(params:any){
     }
 
 
+
+
+
+    
     return(
         <>
+
+
+
+
+        
         <h1>Editar Curso</h1>
         <form action="">
                <input type="text" name="name" defaultValue={course.name} placeholder="Digite o nome do Curso" />
